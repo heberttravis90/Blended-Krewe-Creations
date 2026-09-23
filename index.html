@@ -20,7 +20,7 @@
       </a>
       <button class="menu-btn" aria-expanded="false" aria-controls="site-nav">Menu</button>
       <nav id="site-nav" class="site-nav">
-        <a href="#designs">Designs</a>
+        <a href="#designs">Shop</a>
         <a href="#story">Our Story</a>
         <a href="#custom">Custom Orders</a>
         <a href="#faq">FAQ</a>
@@ -58,28 +58,43 @@
       <div class="section-head">
         <div>
           <p class="eyebrow">In the workshop</p>
-          <h2>Designs we're developing</h2>
+          <h2>Browse by product type</h2>
         </div>
-        <p class="section-note">These are concept renders while we finish print testing. We won't list a product for sale until the real printed version earns it.</p>
+        <p class="section-note">Every category gets its own tab. Concept renders stay labeled until the real printed version has been tested and approved.</p>
       </div>
-      <div class="product-grid">
-        <article class="product-card">
+      <div class="shop-tabs" role="tablist" aria-label="Product categories">
+        <button class="shop-tab active" type="button" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="shop-tab" type="button" data-filter="desk" role="tab" aria-selected="false">Desk Organizers</button>
+        <button class="shop-tab" type="button" data-filter="decor" role="tab" aria-selected="false">Decor</button>
+        <button class="shop-tab" type="button" data-filter="candle" role="tab" aria-selected="false">Candle Holders</button>
+        <button class="shop-tab" type="button" data-filter="kitchen" role="tab" aria-selected="false">Kitchen & Entertaining</button>
+        <button class="shop-tab" type="button" data-filter="garage" role="tab" aria-selected="false">Garage & Racing</button>
+      </div>
+      <div class="product-grid" id="product-grid">
+        <article class="product-card" data-category="kitchen decor">
           <div class="product-image"><img src="https://cdn.creativeclaw.co/u/c129bbd3/images/3788b6e4-0f99-4aaa-b133-70edc178cf99.png" alt="Crawfish boil caddy concept render" loading="lazy"></div>
           <div class="product-copy"><span class="badge">Design Preview</span><h3>Crawfish Boil Caddy</h3><p>Paper towel center, napkin and utensil storage, seasoning spaces, and a South Louisiana crawfish relief.</p><small>In development • FDM-first geometry</small></div>
         </article>
-        <article class="product-card">
+        <article class="product-card" data-category="desk decor">
           <div class="product-image"><img src="https://cdn.creativeclaw.co/u/c129bbd3/images/1ea7cdab-2aa4-477d-a4cc-08d51a1a32fe.png" alt="Sunflower desk organizer concept render" loading="lazy"></div>
           <div class="product-copy"><span class="badge">Design Preview</span><h3>Sunflower Desk Organizer</h3><p>A bright desk station built around chunky petals, useful compartments, and motivational details.</p><small>In development • FDM-first geometry</small></div>
         </article>
-        <article class="product-card">
+        <article class="product-card" data-category="desk garage">
           <div class="product-image"><img src="https://cdn.creativeclaw.co/u/c129bbd3/images/9f8d6f0d-b430-46b1-973e-aa8bb87e06b7.png" alt="Drag racing desk organizer concept render" loading="lazy"></div>
           <div class="product-copy"><span class="badge">Design Preview</span><h3>Drag Racing Desk Organizer</h3><p>Tree, scoreboard, turbo, nitrous and garage-inspired storage without the cliché racing-shop look.</p><small>In development • FDM-first geometry</small></div>
         </article>
-        <article class="product-card">
+        <article class="product-card" data-category="decor">
           <div class="product-image"><img src="https://cdn.creativeclaw.co/u/c129bbd3/images/33ad1218-f490-4753-b1ee-7f31029a1eb1.png" alt="Purple and gold fleur-de-lis concept render" loading="lazy"></div>
           <div class="product-copy"><span class="badge">Design Preview</span><h3>Purple & Gold Fleur</h3><p>Tiger-stripe energy in a clean fleur-de-lis decor piece — no school letters or copied logos.</p><small>In development • original design language</small></div>
         </article>
+        <article class="product-card coming-card" data-category="candle">
+          <div class="product-image placeholder-art" aria-label="Candle holder collection coming soon">
+            <div class="placeholder-mark"><span class="fleur-mark">⚜</span><b>Candle Holder Collection</b><small>FDM prototypes in progress</small></div>
+          </div>
+          <div class="product-copy"><span class="badge">In Development</span><h3>Fleur & Louisiana Candle Holders</h3><p>Sculptural holders designed around thicker printable forms, stable bases and removable LED/flameless candle inserts.</p><small>Prototype category • final models will be print-tested before release</small></div>
+        </article>
       </div>
+      <p class="filter-note" id="filter-note" aria-live="polite"></p>
     </section>
 
     <section class="collections section-tight">

@@ -46,3 +46,22 @@
   .footer-brand img{width:48px;height:48px}
   .footer-brand strong{font-size:23px}
 }
+
+.shop-tabs{display:flex;gap:10px;overflow-x:auto;padding:2px 0 18px;margin:-4px 0 18px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.shop-tabs::-webkit-scrollbar{display:none}
+.shop-tab{flex:0 0 auto;border:1px solid var(--line);background:white;color:var(--green);border-radius:999px;padding:10px 15px;font:800 12px/1 Inter,system-ui,sans-serif;cursor:pointer;white-space:nowrap;transition:.18s ease}
+.shop-tab:hover{border-color:var(--gold);transform:translateY(-1px)}
+.shop-tab.active{background:var(--green);border-color:var(--green);color:white;box-shadow:0 8px 22px rgba(14,58,43,.16)}
+.product-card[hidden]{display:none!important}
+.placeholder-art{background:linear-gradient(145deg,#102d22,#1d4937 55%,#c99638);padding:24px}
+.placeholder-mark{min-height:100%;width:100%;border:1px solid rgba(255,255,255,.28);border-radius:20px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:white;padding:24px}
+.placeholder-mark .fleur-mark{font-size:72px;line-height:1;color:#f1d28e}
+.placeholder-mark b{font:700 31px/1 'Cormorant Garamond',serif;margin-top:10px}
+.placeholder-mark small{margin-top:8px;color:#dce4df}
+.filter-note{min-height:22px;margin:16px 0 0;color:var(--muted);font-size:13px}
+@media(max-width:520px){
+  .shop-tabs{margin-left:-16px;margin-right:-16px;padding-left:16px;padding-right:16px;padding-bottom:14px}
+  .shop-tab{padding:10px 13px;font-size:11px}
+  .placeholder-mark .fleur-mark{font-size:58px}
+  .placeholder-mark b{font-size:27px}
+}

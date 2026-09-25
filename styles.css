@@ -273,6 +273,29 @@ a{color:inherit;text-decoration:none}
 .custom-panel a:not(.btn){color:#f0c971;font-size:17px}
 .full{width:100%;margin:14px 0}
 .custom-panel small{color:#c8d0ca}
+.payment-block{
+  display:grid;
+  grid-template-columns:1fr 150px;
+  gap:18px;
+  align-items:center;
+  margin:22px 0 16px;
+  padding:18px;
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(198,154,75,.28);
+  border-radius:18px;
+}
+.payment-copy h3{margin:4px 0 6px;font:700 31px/1 'Cormorant Garamond',serif;color:#f1d28e}
+.payment-copy p{margin:0;color:#d4ddd7;font-size:13px;line-height:1.5}
+.payment-label{display:block;text-transform:uppercase;letter-spacing:.14em;font-size:10px;font-weight:800;color:#f0c971}
+.cashapp-qr{
+  width:150px;
+  height:150px;
+  object-fit:cover;
+  padding:7px;
+  background:white;
+  border-radius:16px;
+  border:1px solid rgba(255,255,255,.5);
+}
 
 .faq{
   background:
@@ -377,6 +400,8 @@ footer{
   .story-card blockquote{font-size:20px}
   .process-card li{grid-template-columns:72px 1fr;gap:10px;padding:12px 0}
   .custom-panel{padding:20px;border-radius:20px}
+  .payment-block{grid-template-columns:1fr;text-align:center}
+  .cashapp-qr{width:180px;height:180px;margin:auto}
   .faq{border-radius:22px}
   .faq details{padding:17px 2px}
   footer{padding:28px 16px}

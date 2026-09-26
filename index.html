@@ -24,10 +24,31 @@
         <a href="#story">Our Story</a>
         <a href="#custom">Custom Orders</a>
         <a href="#faq">FAQ</a>
+        <button class="cart-btn" id="cart-button" type="button" aria-label="Open shopping cart">Cart <span id="cart-count">0</span></button>
         <a class="nav-cta" href="mailto:orders@blendedkrewe.com">Contact</a>
       </nav>
     </div>
   </header>
+
+  <div class="cart-backdrop" id="cart-backdrop" hidden></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-hidden="true" aria-label="Shopping cart">
+    <div class="cart-head">
+      <div>
+        <p class="eyebrow">Blended Krewe Store</p>
+        <h2>Your cart</h2>
+      </div>
+      <button class="cart-close" id="cart-close" type="button" aria-label="Close shopping cart">×</button>
+    </div>
+    <div class="cart-items" id="cart-items">
+      <p class="cart-empty">Your cart is empty.</p>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total"><span>Subtotal</span><strong id="cart-subtotal">$0.00</strong></div>
+      <p class="cart-shipping-note">Shipping and taxes are shown before payment for released products.</p>
+      <button class="btn primary full" id="checkout-button" type="button" disabled>Checkout</button>
+      <p class="cart-message" id="cart-message" aria-live="polite"></p>
+    </div>
+  </aside>
 
   <main>
     <section class="hero">

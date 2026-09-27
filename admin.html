@@ -32,7 +32,12 @@
     .customer,.items{font-size:13px;line-height:1.6}.items ul{margin:0;padding-left:18px}.status-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}.status-grid label{margin:0;font-size:11px}.status-grid .wide{grid-column:1/-1}
     .save-row{display:flex;gap:10px;align-items:center;margin-top:10px}.save-row .btn{padding:10px 15px}.save-note{font-size:11px;color:var(--muted)}.save-note.ok{color:#2b6b4c}.save-note.error{color:var(--red)}
     .empty{padding:50px 20px;text-align:center;color:var(--muted);background:var(--paper);border:1px dashed var(--line);border-radius:22px}
-    @media(max-width:820px){.order-grid{grid-template-columns:1fr}.dashboard-head,.order-top{align-items:start;flex-direction:column}.status-grid{grid-template-columns:1fr}.status-grid .wide{grid-column:auto}}
+    .test-card{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:20px;margin:0 0 22px;box-shadow:0 14px 38px rgba(56,47,31,.06)}
+    .test-card h2{font-size:30px}.test-card p{margin:7px 0 0;color:var(--muted);font-size:13px}
+    .test-row{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:end;margin-top:14px}
+    .test-row label{margin:0}.test-row .btn{height:44px}
+    .test-message{font-size:12px;min-height:18px;margin:10px 0 0}.test-message.ok{color:#2b6b4c}.test-message.error{color:var(--red)}
+    @media(max-width:820px){.order-grid{grid-template-columns:1fr}.dashboard-head,.order-top{align-items:start;flex-direction:column}.status-grid{grid-template-columns:1fr}.status-grid .wide{grid-column:auto}.test-row{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
@@ -67,6 +72,18 @@
           <p>Move each order through production. Marking an order Shipped sends the customer their tracking email.</p>
         </div>
         <button class="btn primary" id="refresh" type="button">Refresh orders</button>
+      </div>
+      <div class="test-card">
+        <p class="eyebrow">Email check</p>
+        <h2>Send a test shipping email</h2>
+        <p>This uses the same Resend connection and Blended Krewe sender address as a real shipped order.</p>
+        <div class="test-row">
+          <label for="test-email">Send test to
+            <input id="test-email" type="email" autocomplete="email" placeholder="you@example.com">
+          </label>
+          <button class="btn primary" id="send-test-email" type="button">Send test email</button>
+        </div>
+        <p class="test-message" id="test-email-message" aria-live="polite"></p>
       </div>
       <div class="orders" id="orders"></div>
       <p class="message" id="dashboard-message" aria-live="polite"></p>

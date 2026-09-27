@@ -6,6 +6,9 @@ const dashboardMessage=document.getElementById("dashboard-message");
 const ordersEl=document.getElementById("orders");
 const refreshBtn=document.getElementById("refresh");
 const logoutBtn=document.getElementById("logout");
+const testEmailInput=document.getElementById("test-email");
+const testEmailBtn=document.getElementById("send-test-email");
+const testEmailMessage=document.getElementById("test-email-message");
 
 const STATUSES=[
   ["paid","Paid"],
@@ -161,6 +164,34 @@ loginForm.addEventListener("submit",async function(e){
     await loadOrders();
   }catch(err){
     loginMessage.textContent=err.message||"Could not sign in.";
+  }
+});
+
+testEmailBtn.addEventListener("click",async function(){
+  const email=(testEmailInput.value||"").trim();
+  testEmailMessage.className="test-message";
+  if(!email){
+    testEmailMessage.className="test-message error";
+    testEmailMessage.textContent="Enter the email address you want to test.";
+    return;
+  }
+  testEmailBtn.disabled=true;
+  testEmailMessage.textContent="Sending test…";
+  try{
+    const res=await fetch("/api/test-email",{
+      method:"POST",
+      headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({email:email})
+    });
+    const data=await res.json();
+    if(!res.ok)throw new Error(data.error||"Test email could not be sent.");
+    testEmailMessage.className="test-message ok";
+    testEmailMessage.textContent="Sent. Check that inbox for the Blended Krewe test shipping email.";
+  }catch(err){
+    testEmailMessage.className="test-message error";
+    testEmailMessage.textContent=err.message||"Test email could not be sent.";
+  }finally{
+    testEmailBtn.disabled=false;
   }
 });
 

@@ -582,3 +582,12 @@ body.menu-open{overflow:hidden}
   .shop-hero{padding:42px 16px 4px}
   .shop-hero h1{font-size:48px}
 }
+
+/* Tumbler armor + light switch collection previews */
+.tumbler-preview{background:radial-gradient(circle at 70% 15%,rgba(71,145,153,.35),transparent 28%),linear-gradient(145deg,#1c2e2a,#3e5b52 52%,#b68c45)}
+.tiger-tumbler-preview{background:radial-gradient(circle at 76% 18%,rgba(242,190,55,.36),transparent 26%),repeating-linear-gradient(135deg,#4a2464 0 24px,#6e3d87 24px 42px,#d2a62f 42px 54px,#4a2464 54px 76px)}
+.cajun-tumbler-preview{background:radial-gradient(circle at 70% 15%,rgba(255,255,255,.16),transparent 28%),linear-gradient(145deg,#7b1014,#c3272f 46%,#191919 47%,#050505 100%)}
+.business-tumbler-preview{background:radial-gradient(circle at 20% 12%,rgba(198,154,75,.24),transparent 28%),linear-gradient(145deg,#183229,#2c5241 58%,#b18a4a)}
+.fleur-switch-preview{background:radial-gradient(circle at 50% 18%,rgba(198,154,75,.28),transparent 28%),linear-gradient(145deg,#17382d,#315644 62%,#c69a4b)}
+.sunflower-switch-preview{background:radial-gradient(circle at 50% 34%,#9f6f25 0 10%,#d7a42c 11% 22%,rgba(248,204,79,.24) 23% 38%,transparent 39%),linear-gradient(145deg,#efe2bd,#d5bd78 56%,#52664c)}
+.custom-switch-preview{background:radial-gradient(circle at 22% 18%,rgba(198,154,75,.24),transparent 25%),linear-gradient(145deg,#2d3548,#40566f 52%,#8f6c42)}

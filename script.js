@@ -27,26 +27,6 @@ navBackdrop?.addEventListener('click',closeMenu);
 nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));
 document.getElementById('year').textContent=new Date().getFullYear();
 
-// Keep the Idea Catalog easy to find from the existing site navigation without
-// mixing untested concepts into the live checkout catalog.
-const shopNavSection=[...document.querySelectorAll('.nav-section')].find(section=>section.querySelector('p')?.textContent.trim()==='Shop');
-if(shopNavSection && !shopNavSection.querySelector('a[href="catalog.html"]')){
-  const link=document.createElement('a');
-  link.href='catalog.html';
-  link.textContent='Idea Catalog';
-  const firstShopLink=shopNavSection.querySelector('a');
-  firstShopLink?.after(link);
-  link.addEventListener('click',closeMenu);
-}
-const footerLinks=document.querySelector('.footer-links');
-if(footerLinks && !footerLinks.querySelector('a[href="catalog.html"]')){
-  const link=document.createElement('a');
-  link.href='catalog.html';
-  link.textContent='Idea Catalog';
-  const first=footerLinks.querySelector('a');
-  first?.after(link);
-}
-
 const shopTabs=[...document.querySelectorAll('.shop-tab')];
 const productCards=[...document.querySelectorAll('.product-card[data-category]')];
 const filterNote=document.getElementById('filter-note');

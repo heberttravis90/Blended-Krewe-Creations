@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Browse Blended Krewe Creations ideas and custom 3D-print concepts by category." />
+  <title>Idea Catalog | Blended Krewe Creations</title>
+  <link rel="icon" href="https://cdn.creativeclaw.co/u/c129bbd3/images/e6ccf6b3-dcf0-4c33-902d-b63ebeb07346.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .catalog-hero{padding:72px 24px 34px;max-width:1180px;margin:0 auto}.catalog-hero h1{font-size:clamp(2.6rem,7vw,5.6rem);line-height:.93;margin:.35rem 0 1rem}.catalog-hero h1 span{color:var(--gold,#c9a35f)}.catalog-lead{max-width:790px;font-size:1.08rem;line-height:1.7;color:#d6d2ca}.catalog-callout{margin-top:22px;padding:16px 18px;border:1px solid rgba(201,163,95,.28);background:rgba(201,163,95,.08);border-radius:16px;max-width:860px}.catalog-callout strong{display:block;margin-bottom:4px}.catalog-wrap{max-width:1180px;margin:0 auto;padding:0 24px 80px}.catalog-toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0 28px}.catalog-filter{border:1px solid rgba(255,255,255,.14);background:#171c18;color:#f6f1e8;padding:10px 14px;border-radius:999px;font:inherit;cursor:pointer}.catalog-filter.active{background:#c9a35f;color:#111;border-color:#c9a35f}.catalog-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.idea-card{background:#141914;border:1px solid rgba(255,255,255,.10);border-radius:20px;overflow:hidden;display:flex;flex-direction:column;min-height:330px}.idea-visual{height:150px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;background:linear-gradient(135deg,#20392f,#111915 70%)}.idea-visual::after{content:"";position:absolute;width:120px;height:120px;border:1px solid rgba(201,163,95,.25);border-radius:50%;right:-35px;top:-35px}.idea-icon{font-size:3.5rem;filter:drop-shadow(0 8px 18px rgba(0,0,0,.28))}.idea-body{padding:18px;display:flex;flex-direction:column;gap:10px;flex:1}.idea-meta{display:flex;gap:8px;flex-wrap:wrap}.idea-badge{font-size:.72rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;border:1px solid rgba(201,163,95,.34);color:#dec690;border-radius:999px;padding:5px 8px}.idea-card h3{font-size:1.25rem;margin:0}.idea-card p{margin:0;color:#c9c6bf;line-height:1.55}.idea-card small{color:#92978f;line-height:1.45}.idea-actions{margin-top:auto;padding-top:4px;display:flex;gap:8px}.idea-actions .btn{font-size:.9rem;padding:10px 12px}.catalog-section-title{margin:40px 0 10px}.catalog-section-title h2{font-size:2rem;margin:.25rem 0}.catalog-footer-note{margin-top:34px;padding:22px;border-radius:18px;background:#101410;border:1px solid rgba(255,255,255,.1)}.catalog-footer-note p{margin:.35rem 0;color:#c7c4bd}.hidden-card{display:none!important}@media(max-width:900px){.catalog-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:620px){.catalog-grid{grid-template-columns:1fr}.catalog-hero{padding-top:46px}.idea-visual{height:135px}}
+  </style>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html" aria-label="Blended Krewe Creations home">
+        <img src="https://cdn.creativeclaw.co/u/c129bbd3/images/e6ccf6b3-dcf0-4c33-902d-b63ebeb07346.png" alt="Blended Krewe Creations logo" />
+        <span><strong>Blended Krewe</strong><small>Creations</small></span>
+      </a>
+      <div class="header-actions"><a class="btn ghost" href="shop.html">Shop released products</a></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="catalog-hero">
+      <p class="eyebrow">Blended Krewe Idea Catalog</p>
+      <h1>Browse the ideas.<br><span>Pick what fits you.</span></h1>
+      <p class="catalog-lead">This is the place to explore products we have designed, are developing, or can customize. Use it like a lookbook: find an idea you like, then ask us about colors, names, sizing, themes or a version made for your space.</p>
+      <div class="catalog-callout"><strong>Concept catalog — not an automatic checkout page.</strong>Every idea stays labeled as a concept until the real printed version has been built and tested. If you want one early, use “Ask about this design” and we’ll confirm whether it is ready to make.</div>
+    </section>
+
+    <section class="catalog-wrap">
+      <div class="catalog-toolbar" aria-label="Catalog filters">
+        <button class="catalog-filter active" data-filter="all">All ideas</button>
+        <button class="catalog-filter" data-filter="organize">Organization</button>
+        <button class="catalog-filter" data-filter="pantry">Kitchen & Pantry</button>
+        <button class="catalog-filter" data-filter="tech">Tech & Everyday</button>
+        <button class="catalog-filter" data-filter="pet">Pet</button>
+        <button class="catalog-filter" data-filter="kids">Kids & Play</button>
+        <button class="catalog-filter" data-filter="outdoor">Outdoor & Garage</button>
+        <button class="catalog-filter" data-filter="seasonal">Seasonal & Gifts</button>
+      </div>
+
+      <div class="catalog-grid" id="idea-grid">
+        <article class="idea-card" data-cat="organize">
+          <div class="idea-visual"><span class="idea-icon">🎀</span></div><div class="idea-body"><div class="idea-meta"><span class="idea-badge">Concept</span><span class="idea-badge">Modular</span></div><h3>Hair Accessory Station</h3><p>Brushes, sprays, clips, ties and headbands in one personalized organizer with interchangeable modules and nameplates.</p><small>Best as separate printable modules that lock together so customers can build the size they need.</small><div class="idea-actions"><a class="btn ghost" href="mailto:orders@blendedkrewe.com?subject=Idea%20Catalog%20-%20Hair%20Accessory%20Station">Ask about this design</a></div></div>
+        </article>
+
+        <article class="idea-card" data-cat="organize seasonal">
+          <div class="idea-visual"><span class="idea-icon">🎁</span></div><div class="idea-body"><div class="idea-meta"><span class="idea-badge">Concept</span><span class="idea-badge">Modular</span></div><h3>Gift Wrap Station</h3><p>Ribbon holder, tape dispenser, scissors cup, tag tray and wrapping-paper storage that can be mixed and matched.</p><small>A strong craft-room or holiday product because each module can be sold alone or as a set.</small><div class="idea-actions"><a class="btn ghost" href="mailto:orders@blendedkrewe.com?subject=Idea%20Catalog%20-%20Gift%20Wrap%20Station">Ask about this design</a></div></div>
+        </article>
+
+        <article class="idea-card" data-cat="organize">
+          <div class="idea-visual"><span class="idea-icon">🧰</span></div><div class="idea-body"><div class="idea-meta"><span class="idea-badge">Concept</span><span class="idea-badge">Fits P1S</span></div><h3>Mama's Emergency Kit</h3><p>A lidded organizer with swappable inserts for medicine packets, chargers, hair ties, personal items and other everyday essentials.</p><small>Designed around a compact footprint with a sliding lid and personalized top panel.</small><div class="idea-actions"><a class="btn ghost" href="mailto:orders@blendedkrewe.com?subject=Idea%20Catalog%20-%20Mamas%20Emergency%20Kit">Ask about this design</a></div></div>
+        </article>
+
+        <article class="idea-card" data-cat="organize kids">
+          <div class="idea-visual"><span class="idea-icon">📚</span></div><div class="idea-body"><div class="idea-meta"><span class="idea-badge">Concept</span><span class="idea-badge">Personalized</span></div><h3>School Paper Organizer</h3><p>Stacked bins for notebooks, worksheets, homework and papers with removable nameplates for each child.</p><small>Built as stackable modules so the organizer can grow without requiring one oversized print.</small><div class="idea-actions"><a class="btn ghost" href="mailto:orders@blendedkrewe.com?subject=Idea%20Catalog%20-%20School%20Paper%20Organizer">Ask about this design</a></div></div>
+        </article>
+
+        <article class="idea-card" data-cat="organize kids">
+          <div class="idea-visual"><span class="idea-icon">🗂️</span></div><div class="idea-body"><div class="idea-meta"><span class="idea-badge">Concept</span><span class="idea-badge">Expandable</span></div><h3>Family Homework Center</h3><p>One vertical tower per child with slots for newsletters, homework, to-do items and papers that need to go back to school.</p><small>Customers can start with one tower and clip additional child towers beside it.</small><div class="idea-actions"><a class="btn ghost" href="mailto:orders@blendedkrewe.com?subject=Idea%20Catalog%20-%20Family%20Homework%20Center">Ask about this design</a></div></div>
+        </article>
+
+        <article class="idea-card" data-cat="pantry organize">
+          <div class="idea-visual"><span class="idea-icon">🥫</span></div><div class="idea-body"><div class="idea-meta"><span class="idea-badge">Concept</span><span class="idea-badge">Pantry</span></div><h3>Rolling Can Organizer</h3><p>Tiered can storage that keeps canned goods visible and easy to grab while using cabinet depth efficiently.</p><small>Production version would be split into printable locking sections rather than one oversized body.</small><div class="idea-actions"><a class="btn ghost" href="mailto:orders@blendedkrewe.com?subject=Idea%20Catalog%20-%20Can%20Organizer">Ask about this design</a></div></div>
+        </article>
+
+        <article class="idea-card" data-cat="pantry organize">
+          <div class="idea-visual"><span class="idea-icon">🚪</span></div><div class="idea-body"><div class="idea-meta"><span class="idea-badge">Concept</span><span class="idea-badge">Modular</span></div><h3>Over-the-Door Pantry System</h3><p>Door-mounted rails with removable bins for seasonings, snacks, drink mixes and a dedicated Ziploc bag organizer.</p><small>Rail sections and bins print separately so customers can choose exactly what they need.</small><div class="idea-actions"><a class="btn ghost" href="mailto:orders@blendedkrewe.com?subject=Idea%20Catalog%20-%20Pantry%20Door%20System">Ask about this design</a></div></div>
+        </article>
+
+        <article class="idea-card" data-cat="kids seasonal">
+          <div class="idea-visual"><span class="idea-icon">✨</span></div><div class="idea-body"><div class="idea-meta"><span class="idea-badge">Concept</span><span class="idea-badge">Repeat-purchase friendly</span></div><h3>Blended Krewe Charm Bar</h3><p>Small sliding-lid charm cases with mix-and-match charms for sports, Louisiana, pets, holidays, school, medical, hobbies and more.</p><small>One base case with themed charm packs gives customers an easy way to keep adding to their collection.</small><div class="idea-actions"><a class="btn ghost" href="mailto:orders@blendedkrewe.com?subject=Idea%20Catalog%20-%20Charm%20Bar">Ask about this design</a></div></div>
+        </article>
+
+        <article class="idea-card" data-cat="organize">
+          <div class="idea-visual"><span class="idea-icon">👕</span></div><div class="idea-body"><div class="idea-meta"><span class="idea-badge">Locked In</span><span class="idea-badge">Functional</span></div><h3>Closet Space Saver Hanger</h3><p>A vertical hanger system that lets several shirts hang in the space normally used by one hanger.</p><small>Planned in PETG with reinforced hooks and rounded garment slots.</small><div class="idea-actions"><a class="btn ghost" href="mailto:orders@blendedkrewe.com?subject=Idea%20Catalog%20-%20Closet%20Space%20Saver">Ask about this design</a></div></div>
+        </article>
+
+        <article class="idea-card" data-cat="tech organize">
+          <div class="idea-visual"><span class="idea-icon">🔌</span></div><div class="idea-body"><div class="idea-meta"><span class="idea-badge">Concept</span><span class="idea-badge">Easy first print</span></div><h3>Couch Charger Cable Guide</h3><p>A compact guide that keeps phone charging cables from disappearing behind the couch.</p><small>Small, low-cost and ideal for custom cable diameters once measured with calipers.</small><div class="idea-actions"><a class="btn ghost" href="mailto:orders@blendedkrewe.com?subject=Idea%20Catalog%20-%20Couch%20Cable%20Guide">Ask about this design</a></div></div>
+        </article>
+
+        <article class="idea-card" data-cat="tech">
+          <div class="idea-visual"><span class="idea-icon">📺</span></div><div class="idea-body"><div class="idea-meta"><span class="idea-badge">Concept</span><span class="idea-badge">TPU</span></div><h3>Protective Remote Covers</h3><p>Full-back flexible remote sleeves with reinforced corners, button access and custom patterns such as Louisiana, checkerboard or tiger stripe.</p><small>Production versions will be measured to the exact remote model and printed in flexible TPU.</small><div class="idea-actions"><a class="btn ghost" href="mailto:orders@blendedkrewe.com?subject=Idea%20Catalog%20-%20Remote%20Cover">Ask about this design</a></div></div>
+        </article>
+
+        <article class="idea-card" data-cat="tech">
+          <div class="idea-visual"><span class="idea-icon">📱</span></div><div class="idea-body"><div class="idea-meta"><span class="idea-badge">Concept</span><span class="idea-badge">TPU</span></div><h3>Custom Phone Cases</h3><p>Protective flexible cases with reinforced corners, camera protection, textured grips and original Louisiana-inspired options.</p><small>Each model must be built from exact phone dimensions. Detailed flat artwork may require a separate finishing process.</small><div class="idea-actions"><a class="btn ghost" href="mailto:orders@blendedkrewe.com?subject=Idea%20Catalog%20-%20Custom%20Phone%20Case">Ask about this design</a></div></div>
+        </article>
+
+        <article class="idea-card" data-cat="pet">
+          <div class="idea-visual"><span class="idea-icon">🐾</span></div><div class="idea-body"><div class="idea-meta"><span class="idea-badge">Concept</span><span class="idea-badge">Personalized</span></div><h3>Raised Pet Bowl Station</h3><p>A sturdy raised station for two removable stainless bowls with a custom pet nameplate and optional paw details.</p><small>Designed as modular printable sections so larger stations do not depend on one oversized print.</small><div class="idea-actions"><a class="btn ghost" href="mailto:orders@blendedkrewe.com?subject=Idea%20Catalog%20-%20Raised%20Pet%20Bowl%20Station">Ask about this design</a></div></div>
+        </article>
+
+        <article class="idea-card" data-cat="kids">
+          <div class="idea-visual"><span class="idea-icon">🌀</span></div><div class="idea-body"><div class="idea-meta"><span class="idea-badge">Concept</span><span class="idea-badge">Real-play design</span></div><h3>Modular Battle-Top Arena</h3><p>A flat-bottom battle arena with a sloped play surface, raised guard walls and printable sections that bolt or clip together.</p><small>Designed around the P1S bed instead of pretending the full arena can print in one piece.</small><div class="idea-actions"><a class="btn ghost" href="mailto:orders@blendedkrewe.com?subject=Idea%20Catalog%20-%20Battle%20Arena">Ask about this design</a></div></div>
+        </article>
+
+        <article class="idea-card" data-cat="kids">
+          <div class="idea-visual"><span class="idea-icon">⚙️</span></div><div class="idea-body"><div class="idea-meta"><span class="idea-badge">Concept</span><span class="idea-badge">Measured fit required</span></div><h3>Custom Battle Tops</h3><p>Original spinning battle tops with rounded impact surfaces, replaceable tips and launcher interfaces built from real measurements.</p><small>Launcher compatibility will be confirmed from the actual launcher rather than guessed from a render.</small><div class="idea-actions"><a class="btn ghost" href="mailto:orders@blendedkrewe.com?subject=Idea%20Catalog%20-%20Custom%20Battle%20Tops">Ask about this design</a></div></div>
+        </article>
+
+        <article class="idea-card" data-cat="kids">
+          <div class="idea-visual"><span class="idea-icon">🤖</span></div><div class="idea-body"><div class="idea-meta"><span class="idea-badge">Prototype</span><span class="idea-badge">Playable</span></div><h3>Articulated Action Figures</h3><p>Chunky, durable articulated figures with replaceable parts, rounded details and simplified joints designed for actual play.</p><small>Kid-use versions prioritize durability and safe geometry over decorative complexity.</small><div class="idea-actions"><a class="btn ghost" href="mailto:orders@blendedkrewe.com?subject=Idea%20Catalog%20-%20Action%20Figure">Ask about this design</a></div></div>
+        </article>
+
+        <article class="idea-card" data-cat="outdoor">
+          <div class="idea-visual"><span class="idea-icon">💡</span></div><div class="idea-body"><div class="idea-meta"><span class="idea-badge">Concept</span><span class="idea-badge">ASA</span></div><h3>1×4 String-Light Cable Loops</h3><p>Closed-loop outdoor clips that screw to perimeter boards and keep the light cable fully captured so it cannot pop out.</p><small>Permanent outdoor versions are planned in ASA for better heat and UV resistance.</small><div class="idea-actions"><a class="btn ghost" href="mailto:orders@blendedkrewe.com?subject=Idea%20Catalog%20-%20String%20Light%20Clips">Ask about this design</a></div></div>
+        </article>
+
+        <article class="idea-card" data-cat="outdoor tech">
+          <div class="idea-visual"><span class="idea-icon">🛍️</span></div><div class="idea-body"><div class="idea-meta"><span class="idea-badge">Concept</span><span class="idea-badge">Vehicle accessory</span></div><h3>Headrest Grocery-Bag Hooks</h3><p>Custom hooks that mount to vehicle headrest posts to hold grocery bags, purses or small gear off the floor.</p><small>Hot-car versions will use an appropriate heat-resistant material and exact headrest-post measurements.</small><div class="idea-actions"><a class="btn ghost" href="mailto:orders@blendedkrewe.com?subject=Idea%20Catalog%20-%20Headrest%20Bag%20Hooks">Ask about this design</a></div></div>
+        </article>
+
+        <article class="idea-card" data-cat="organize seasonal">
+          <div class="idea-visual"><span class="idea-icon">🧴</span></div><div class="idea-body"><div class="idea-meta"><span class="idea-badge">Concept</span><span class="idea-badge">Bathroom</span></div><h3>Mason-Jar Bathroom Set</h3><p>Distressed farmhouse-style covers for hand soap, floss, cotton swabs and other bathroom items using replaceable inserts.</p><small>The printed shell provides the look while the removable insert handles the actual contents.</small><div class="idea-actions"><a class="btn ghost" href="mailto:orders@blendedkrewe.com?subject=Idea%20Catalog%20-%20Mason%20Jar%20Bathroom%20Set">Ask about this design</a></div></div>
+        </article>
+
+        <article class="idea-card" data-cat="organize">
+          <div class="idea-visual"><span class="idea-icon">🧻</span></div><div class="idea-body"><div class="idea-meta"><span class="idea-badge">Locked In</span><span class="idea-badge">Home</span></div><h3>Fleur-de-Lis Tissue Box Cover</h3><p>An open-bottom tissue box cover with a white body, teal fleur-de-lis accents and a clean rounded opening.</p><small>Designed to slide over a standard tissue box and stay simple enough for reliable FDM printing.</small><div class="idea-actions"><a class="btn ghost" href="mailto:orders@blendedkrewe.com?subject=Idea%20Catalog%20-%20Fleur%20Tissue%20Box">Ask about this design</a></div></div>
+        </article>
+
+        <article class="idea-card" data-cat="seasonal">
+          <div class="idea-visual"><span class="idea-icon">🎄</span></div><div class="idea-body"><div class="idea-meta"><span class="idea-badge">Locked In</span><span class="idea-badge">Seasonal</span></div><h3>Merry Creepmas Door Hanger</h3><p>A Halloween-meets-Christmas layered door hanger built from flat, printable pieces for easy multicolor assembly.</p><small>Designed as a seasonal décor piece rather than a fragile sculpture.</small><div class="idea-actions"><a class="btn ghost" href="mailto:orders@blendedkrewe.com?subject=Idea%20Catalog%20-%20Merry%20Creepmas">Ask about this design</a></div></div>
+        </article>
+
+        <article class="idea-card" data-cat="seasonal">
+          <div class="idea-visual"><span class="idea-icon">☠️</span></div><div class="idea-body"><div class="idea-meta"><span class="idea-badge">Locked In</span><span class="idea-badge">Seasonal</span></div><h3>Candy Cane Crossbones</h3><p>A spooky Christmas layered sign with a skull, crossed candy canes and bold printable color-separated pieces.</p><small>Flat-panel construction keeps the finished piece dramatic without depending on impossible geometry.</small><div class="idea-actions"><a class="btn ghost" href="mailto:orders@blendedkrewe.com?subject=Idea%20Catalog%20-%20Candy%20Cane%20Crossbones">Ask about this design</a></div></div>
+        </article>
+      </div>
+
+      <div class="catalog-footer-note">
+        <p class="eyebrow">Have a variation in mind?</p>
+        <h2>Use the catalog as a starting point.</h2>
+        <p>Most ideas can be adjusted for names, colors, size, layout or intended use. We will tell you if the change is realistically printable before taking the order.</p>
+        <a class="btn primary" href="mailto:orders@blendedkrewe.com?subject=Idea%20Catalog%20Custom%20Request&body=Design%20I%20liked%3A%0AWhat%20I%27d%20change%3A%0AColors%3A%0AName%2Fpersonalization%3A">Start a catalog request</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand"><img src="https://cdn.creativeclaw.co/u/c129bbd3/images/e6ccf6b3-dcf0-4c33-902d-b63ebeb07346.png" alt=""><div><strong>Blended Krewe Creations</strong><span>Family-built creations with Louisiana roots.</span></div></div>
+    <div class="footer-links"><a href="shop.html">Shop</a><a href="catalog.html">Idea Catalog</a><a href="mailto:orders@blendedkrewe.com">orders@blendedkrewe.com</a><a href="#top">Back to top ↑</a></div>
+    <p class="copyright">© <span id="year"></span> Blended Krewe Creations. Made Together. Made Original.</p>
+  </footer>
+
+  <script>
+    const filters=[...document.querySelectorAll('.catalog-filter')];
+    const cards=[...document.querySelectorAll('.idea-card')];
+    filters.forEach(btn=>btn.addEventListener('click',()=>{
+      filters.forEach(b=>b.classList.remove('active')); btn.classList.add('active');
+      const f=btn.dataset.filter;
+      cards.forEach(card=>{
+        const cats=(card.dataset.cat||'').split(' ');
+        card.classList.toggle('hidden-card', f!=='all' && !cats.includes(f));
+      });
+    }));
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>

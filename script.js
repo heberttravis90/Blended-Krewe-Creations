@@ -44,7 +44,7 @@ function applyFilter(filter,updateUrl=false){
     if(show)shown++;
   });
   if(filterNote){
-    filterNote.textContent=filter==='all'?'Showing all current designs.':shown+' design'+(shown===1?'':'s')+' in '+selected.textContent+'.';
+    filterNote.textContent=filter==='all'?'Showing all current items.':shown+' design'+(shown===1?'':'s')+' in '+selected.textContent+'.';
   }
   if(updateUrl && location.pathname.endsWith('shop.html')){
     const url=new URL(location.href);
@@ -130,6 +130,8 @@ function applyCatalog(){
   productCards.forEach(card=>{
     const title=card.querySelector('h3')?.textContent?.trim();
     const copy=card.querySelector('.product-copy');
+    // Custom-order inquiry products are not Stripe checkout releases.
+    if(card.dataset.orderMode==='inquiry')return;
     if(!title||!copy||copy.querySelector('.product-actions'))return;
     const product=liveByName.get(title);
     const wrap=document.createElement('div');wrap.className='product-actions';

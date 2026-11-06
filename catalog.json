@@ -1,5 +1,14 @@
 {
   "version": 1,
   "currency": "usd",
-  "products": []
+  "products": [
+    {
+      "sku": "BK-TROPHY-THUNDERSTRIKE-001",
+      "name": "Blue Thunder Thunderstrike Custom Soccer Trophy",
+      "description": "Personalized approximately 7-inch soccer team trophy. Custom orders via email while print and shipping tests are completed.",
+      "price_cents": 3999,
+      "shipping_cents": null,
+      "active": false
+    }
+  ]
 }

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 840" role="img" aria-labelledby="title description">
+<title id="title">Blue Thunder Thunderstrike custom soccer trophy</title>
+<desc id="description">Illustrated representation of the actual CAD design: blue lightning, black and white soccer ball, Blue Thunder banner, 2026 season, and Trenton sample nameplate.</desc>
+<defs>
+  <linearGradient id="back" x2="0" y2="1"><stop stop-color="#202734"/><stop offset="1" stop-color="#121721"/></linearGradient>
+  <linearGradient id="base" x2="0" y2="1"><stop stop-color="#1b202a"/><stop offset=".9" stop-color="#05080d"/></linearGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="7" dy="13" stdDeviation="8" flood-color="#000" flood-opacity=".4"/></filter>
+</defs>
+<rect width="800" height="840" fill="url(#back)"/>
+<path d="M0 774L800 735V840H0Z" fill="#2c3544"/>
+<g filter="url(#shadow)">
+ <path d="M151 270 L485 163 684 276 632 570 542 701 300 720 194 590 124 466Z" fill="#11151d" stroke="#1167ec" stroke-width="18" stroke-linejoin="round"/>
+ <path d="M172 285 L482 188 659 287 609 550 527 678 310 694 215 575 153 466Z" fill="none" stroke="#f0f4f9" stroke-width="8" stroke-linejoin="round"/>
+ <path d="M533 171L698 132 584 331 638 318 475 496 518 443 431 466Z" fill="#1167ec" stroke="#e6edf5" stroke-width="7" stroke-linejoin="round"/>
+ <path d="M542 176L666 146 558 303 603 287 479 427 512 365 459 381Z" fill="#10151b"/>
+ <path d="M516 410L419 480 454 482 266 714 348 518 300 542 442 369Z" fill="#1167ec" stroke="#f4f6fa" stroke-width="7" stroke-linejoin="round"/>
+ <path d="M445 447L385 510 428 493 285 676 363 529 320 540Z" fill="#0a0e14"/>
+ <circle cx="313" cy="185" r="116" fill="#edf1f5" stroke="#10131a" stroke-width="12"/>
+ <path d="M294 164L353 143 397 187 370 242 303 242 269 200Z" fill="#10131a"/>
+ <path d="M245 88 L273 133 248 179 200 162 211 121Z M363 81 L392 110 416 151 386 174 355 133Z M214 230 L264 211 292 255 275 283 237 265Z M352 274 L373 234 420 244 397 277 366 294Z" fill="#10131a"/>
+ <path d="M274 132L294 165 M355 144L363 112 M270 200L230 211 M303 242L285 275 M370 242L393 258" fill="none" stroke="#10131a" stroke-width="7"/>
+ <path d="M184 326L623 260 617 435 166 521Z" fill="#10131a" stroke="#f1f4f8" stroke-width="10"/>
+ <path d="M205 342L611 279 606 418 181 501Z" fill="none" stroke="#1167ec" stroke-width="4"/>
+ <g transform="translate(228 382) skewX(-13) rotate(-6)">
+  <text font-family="Arial,Helvetica,sans-serif" font-weight="900" font-style="italic" font-size="59" letter-spacing="0" fill="#1167ec">BLUE</text>
+  <text x="-5" y="79" font-family="Arial,Helvetica,sans-serif" font-weight="900" font-style="italic" font-size="66" letter-spacing="-4" fill="#ffffff">THUNDER</text>
+ </g>
+ <path d="M466 563L618 527 602 607 450 636Z" fill="#10131a" stroke="#f1f4f8" stroke-width="5"/>
+ <text transform="translate(478 608) rotate(-12)" font-family="Arial,Helvetica,sans-serif" font-size="56" font-weight="900" font-style="italic" fill="#ffffff">2026</text>
+ <path d="M400 642L588 605 571 650 383 683Z" fill="#1167ec"/>
+ <text transform="translate(420 663) rotate(-11)" font-family="Arial,Helvetica,sans-serif" font-weight="900" font-size="26" fill="#ffffff">U8 DIVISION</text>
+ <path d="M281 691H320V734H281Z M506 681H546V735H506Z" fill="#0d1017"/>
+ <path d="M118 727L662 711 696 776 97 791Z" fill="url(#base)" stroke="#151923" stroke-width="4"/>
+ <path d="M259 735L565 728 573 766 252 774Z" fill="#1167ec" stroke="#202c46" stroke-width="3"/>
+ <text x="413" y="763" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="42" font-weight="900" letter-spacing="2" fill="#ffffff">TRENTON</text>
+</g>
+<text x="400" y="814" font-family="Arial,Helvetica,sans-serif" font-size="16" text-anchor="middle" fill="#bbc6d3" letter-spacing="1.1">CAD DESIGN PREVIEW • SAMPLE NAMEPLATE</text>
+</svg>

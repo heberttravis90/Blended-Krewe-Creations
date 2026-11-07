@@ -175,5 +175,31 @@ checkoutButton?.addEventListener('click',async()=>{
   }
 });
 
+/* Custom-color quotes: include choices in a draft email, without checkout or public prices. */
+document.querySelectorAll('.request-custom-color-quote').forEach(button=>{
+  button.addEventListener('click',()=>{
+    const card=button.closest('.product-card');
+    if(!card)return;
+    const product=button.dataset.productName||card.querySelector('h3')?.textContent?.trim()||'Custom product';
+    const options=[...card.querySelectorAll('[data-custom-option]')].map(select=>{
+      return select.dataset.customOption+': '+select.value;
+    });
+    const lines=[
+      'Hello Blended Krewe Creations,',
+      '',
+      'Please send me a custom quote for: '+product,
+      ...options,
+      'Quantity: ',
+      'Pickup or shipping: ',
+      'Additional color details or requests: ',
+      '',
+      'Please confirm available colors, total pricing and turnaround.'
+    ];
+    const subject=encodeURIComponent(product+' — Custom Color Quote Request');
+    const body=encodeURIComponent(lines.join('\n'));
+    window.location.href='mailto:orders@blendedkrewe.com?subject='+subject+'&body='+body;
+  });
+});
+
 renderCart();
 loadCatalog();

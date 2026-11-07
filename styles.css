@@ -610,3 +610,13 @@ body.menu-open{overflow:hidden}
   .availability-empty{grid-template-columns:1fr;text-align:left;padding:22px}
   .availability-empty .btn{width:100%;text-align:center}
 }
+
+
+/* Custom-color product inquiry fields; matches the existing shop styling. */
+.custom-product-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:16px 0 12px}
+.custom-product-options label{display:flex;flex-direction:column;gap:7px;font-size:12px;font-weight:800;letter-spacing:.025em;color:var(--cypress)}
+.custom-product-options select{width:100%;min-width:0;background:#fffdfa;border:1px solid #cbbfae;border-radius:10px;padding:11px 12px;color:#243b34;font:600 13px/1.3 'Inter',sans-serif}
+.custom-product-options select:focus-visible{outline:3px solid rgba(30,95,77,.35);outline-offset:2px}
+.custom-product-contact{font-size:12px;margin:10px 0 0!important}
+.custom-product-contact a{color:var(--cypress);font-weight:800}
+@media(max-width:560px){.custom-product-options{grid-template-columns:1fr}}

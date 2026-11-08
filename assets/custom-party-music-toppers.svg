@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="720" viewBox="0 0 960 720" role="img" aria-label="Illustration of pink and purple music-themed cupcake toppers, birthday number ten, microphone with bow and musical notes">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#201629"/><stop offset="1" stop-color="#4b265c"/></linearGradient><linearGradient id="pink" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff86d1"/><stop offset="1" stop-color="#f32d98"/></linearGradient><filter id="sh"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#09050d" flood-opacity=".55"/></filter></defs>
+<rect width="960" height="720" fill="url(#bg)"/><circle cx="160" cy="100" r="130" fill="#673c84" opacity=".14"/><circle cx="820" cy="580" r="210" fill="#d54fa9" opacity=".08"/>
+<g fill="none" stroke="#b874ee" opacity=".38"><circle cx="160" cy="165" r="7"/><circle cx="776" cy="145" r="10"/><path d="M65 475h120M780 485h118"/></g>
+<g filter="url(#sh)">
+<path d="M275 95l51 99 111 15-81 80 21 114-102-54-102 54 20-114-81-80 111-15z" fill="#0d0e16" stroke="#a64dec" stroke-width="19" stroke-linejoin="round"/>
+<path d="M275 134l37 72 80 11-59 58 15 83-73-39-74 39 15-83-59-58 82-11z" fill="none" stroke="#ce8bf5" stroke-width="7"/>
+<text x="275" y="307" text-anchor="middle" font-size="136" font-family="Arial,sans-serif" font-weight="900" fill="url(#pink)" stroke="#0d0e16" stroke-width="3" paint-order="stroke">10</text>
+<path d="M263 402v183" stroke="#0d0e16" stroke-width="29" stroke-linecap="round"/>
+<g transform="translate(605 105)">
+<path d="M-66 150v150q0 30 25 30h82q25 0 25-30V150Z" fill="#0e1018" stroke="#0c0a11" stroke-width="20"/>
+<rect x="-83" y="0" width="166" height="173" rx="83" fill="#a044dd" stroke="#0d0e16" stroke-width="18"/>
+<path d="M-60 76h120M-66 110h132M-53 46h106M-30 12v145M0 8v161M30 12v145" stroke="#2a113f" stroke-width="8" opacity=".75"/>
+<path d="M-92 191q-56-44-75 4 15 48 78 26ZM92 191q56-44 75 4-15 48-78 26Z" fill="url(#pink)" stroke="#0d0e16" stroke-width="12"/>
+<path d="M-14 200v55l-76 82 8-85Z M14 200v55l76 82-8-85Z" fill="url(#pink)" stroke="#0d0e16" stroke-width="11"/><rect x="-25" y="183" width="50" height="50" rx="12" fill="#ff56b2" stroke="#0d0e16" stroke-width="10"/>
+<path d="M0 340v120" stroke="#0d0e16" stroke-width="29" stroke-linecap="round"/>
+</g>
+<g transform="translate(702 467) rotate(12)"><path d="M0 0v100q-40-20-50 7 8 29 40 18L20 110V20l75 18v82q-38-18-48 8 7 30 41 16l26-14V0Z" fill="#da80ff" stroke="#0e1018" stroke-width="13" stroke-linejoin="round"/></g>
+<g transform="translate(505 475) scale(.8)"><path d="M0 -43L13 -14L45 -9L22 13L28 45L0 29L-28 45L-22 13L-45 -9L-13 -14Z" fill="#ff65b2" stroke="#0c0d14" stroke-width="12"/></g>
+</g><text x="480" y="666" font-family="Arial,sans-serif" font-size="21" letter-spacing="3" text-anchor="middle" fill="#f5ddff">DESIGN ILLUSTRATIONS · CUSTOM COLORS &amp; AGES</text></svg>
